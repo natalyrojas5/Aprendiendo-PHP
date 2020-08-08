@@ -1,7 +1,7 @@
 <?php
 
     #Desactivar toda la notificacion de error
-    error_reporting(0);
+    // error_reporting(0);
     $nombre = 'Nataly';
 
     echo $nombre;
