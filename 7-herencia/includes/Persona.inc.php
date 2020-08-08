@@ -27,7 +27,6 @@
         public $nombre;
         public $apellido;
         public $email;
-
         /* 
             try{
                 // código
@@ -45,8 +44,38 @@
             $this->nombre = $nombre;
             $this->apellido = $apellido;
             $this->email = $email;
+            $this->validandoNombre($this->nombre);
+            $this->validandoEmail($this->email);
         }
 
+        public function validandoNombre($nombre){
+            try{
+                if( empty ($nombre) ){
+                    throw new Exception('Por favor ingrese su nombre');
+                }else{
+                    return 'Mi nombre es: '.$nombre;
+                }
+            }catch (Exception $e){
+                echo $e->getMessage();
+            }
+        }
+
+        public function validandoEmail($email){
+            /*  
+                filter_var() -> Filtra una variable con el filtro q se indique
+                FILTER_NOMBRE_-VALIDACION
+            */
+
+            try {
+                if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+                    throw new Exception('El email ingresado no es valido');
+                }else{
+                    return $email;
+                }
+            }catch (Exception $e) {
+                echo $e->getMessage();
+            }
+        }
         public function bienvenida(){
             return "Bienvenido {$this->nombre} al mundo de PHP";
         }

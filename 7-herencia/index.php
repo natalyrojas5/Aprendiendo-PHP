@@ -12,12 +12,14 @@
         $estudiante = new Estudiante('Nataly', 'Rojas', 'natalyrojasm5@gmail.com');
         $profesor = new Profesor('Yesi', 'Days', 'yesi@gmail.com');
 
-        echo "<h1> {$estudiante->bienvenida()}</h1>";
-        echo '<p>' .$profesor->bienvenida() .'</p>';
+        echo "<p> {$estudiante->bienvenida()}</p>";
+        // echo '<p>' .$profesor->bienvenida() .'</p>';
         echo '<p>' .$profesor->validarCompra() .'</p>';
 
         // Mostrando const que esta en mi clase padre Persona
         echo '<p>' .$profesor::miNombre .'</p>';
+        echo '<p>' .$profesor->validandoNombre('Nataly') .'</p>';
+
     ?>
 </body>
 </html>

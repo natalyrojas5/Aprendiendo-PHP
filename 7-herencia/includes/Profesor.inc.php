@@ -3,7 +3,9 @@
 
         // Sobreescribiendo funcion bienvenida()
         public function bienvenida(){
-            return "Bienvenido profesor {$this->nombre}";
+            if($this->validandoNombre($this->nombre)){
+                return "Bienvenido profesor {$this->nombre}";
+            }
         }
     }
 ?>
