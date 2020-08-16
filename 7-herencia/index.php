@@ -9,7 +9,7 @@
     <?php
         require_once __DIR__ .'/includes/Global.inc.php';
 
-        $estudiante = new Estudiante('Nataly', 'Rojas', 'natalyrojasm5@gmail.com');
+        $estudiante = new Estudiante('', 'Rojas', 'natalyrojasm5@gmail.com');
         $profesor = new Profesor('Yesi', 'Days', 'yesi@gmail.com');
 
         echo "<p> {$estudiante->bienvenida()}</p>";
