@@ -1,0 +1,30 @@
+body {
+  background-color: #0d6efd;
+}
+.content_form {
+  background-color: #fff;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.message {
+  border-radius: 4px;
+  color: white;
+  padding: 0.8rem 1rem;
+  margin: 0 auto 1rem auto;
+  width: 92%;
+}
+
+.message p {
+  margin: 0;
+}
+
+.error {
+  background-color: #fa4646;
+}
+
+.success {
+  background-color: #5fb736;
+}
