@@ -14,36 +14,41 @@
     // print_r($dias);
     // echo $dias[0];
 
-    echo '<br>';
+    // echo '<br>';
 
     #Agregar valor a un array
     $dias[] = 'Sábado';
     // var_dump($dias);
 
-    echo '<br>';
+    // echo '<br>';
 
     #Agregar valor en un indice en especial (3)
     $dias[3] = 'Feriado';
     // var_dump($dias);
 
-    echo '<br>';
+    // echo '<br>';
 
     /* ARREGLO ASOCIATIVOS -----------------*/
     $misDatos = ['nombre' => 'Nataly', 'edad' =>  21, 'lenguajeFav' => 'Javascript', 'FrameworkFav' => 'React'];
     // var_dump($misDatos);
-    echo '<br>';
-
-
+    // echo '<br>';
     // echo $misDatos['edad'];
 
-    #Arreglo multidimensional
+    $estudiantes = array("Mariana"=> 18, "Jose"=> 15, "Nataly"=>20);
+    foreach ($estudiantes as $estudiante => $nota) {
+        echo 'La nota de '. $estudiante . ' es ' . $nota .'</br>';
+    }
+
+
+
+    /* ARREGLO ASOCIATIVO ----------------- */
     $numeros = array(
         array(1, 33, 41), #Fila
         array(25, 10, 5), #Fila
         array(3, 7, 20), #Fila
         array(19, 49, 2) #Fila
     );
-    echo '<br>';
+    // echo '<br>';
     echo $numeros[1][2];
 
     echo '<br>';
@@ -68,6 +73,7 @@
     
     #Agregar llave y valor
     $peliculas[1]['puntuacionFav'] = 10;
+    echo '<br>';
     
     echo $peliculas[1]['puntuacionFav'];
 ?>
