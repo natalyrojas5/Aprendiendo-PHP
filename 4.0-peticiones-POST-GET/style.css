@@ -1,0 +1,14 @@
+body {
+  align-items: center;
+  background: #0d6efd;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.form {
+  background-color: white;
+  border-radius: 0.5rem;
+  margin: auto;
+  max-width: 500px;
+  padding: 2rem;
+}
